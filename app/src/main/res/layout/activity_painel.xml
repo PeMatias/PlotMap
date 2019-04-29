@@ -1,9 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- Vertical Orientation is set  with weightSum-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="5"
+    android:orientation="vertical"
     tools:context=".view.PainelActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- Text Displayed At Top -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Continentes"
+        android:textSize="30dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"/>
+
+    <!-- Button Used -->
+
+    <Button
+        android:id="@+id/btAfrica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="África"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btAmerica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="América"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btAsia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ásia"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btEuropa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Europa"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btOceania"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Oceania"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:textColor="@color/foreground"
+        android:layout_weight="1"/>
+</LinearLayout>
