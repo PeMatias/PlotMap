@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                     List<Pais> paisBody = response.body();
 
                     paisList.clear();
-                    for (Pais pais : paisBody) {
+                    for (Pais pais : paisBody)
+                    {
                         paisList.add(pais);
                     }
                     adapter.notifyDataSetChanged();
