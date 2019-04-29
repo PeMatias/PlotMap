@@ -3,11 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".view.MainActivity">
-=======
-    tools:context=".MainActivity">
->>>>>>> 156af85606f08fcfece39032cf978259111e21e1
+
 
     <android.support.v4.widget.SwipeRefreshLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -16,18 +13,12 @@
         android:layout_height="match_parent">
 
         <ListView
-<<<<<<< HEAD
             android:id="@+id/listView"
-=======
-            android:id="@+id/listViewContinente"
->>>>>>> 156af85606f08fcfece39032cf978259111e21e1
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
-<<<<<<< HEAD
+
 </RelativeLayout>
-=======
-</RelativeLayout>
->>>>>>> 156af85606f08fcfece39032cf978259111e21e1
+
