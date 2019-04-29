@@ -15,8 +15,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Continentes"
         android:textSize="30dp"
-        android:background="@color/background"
         android:textColor="@color/foreground"
+        android:background="@color/colorPrimaryDark"
         android:textAlignment="center"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
@@ -30,8 +30,8 @@
         android:layout_height="wrap_content"
         android:text="África"
         android:textSize="20dp"
-        android:background="@color/background"
         android:textColor="@color/foreground"
+        android:background="@color/ligthPrimaryColor"
         android:layout_weight="1"/>
 
     <Button
@@ -40,8 +40,8 @@
         android:layout_height="wrap_content"
         android:text="América"
         android:textSize="20dp"
-        android:background="@color/background"
         android:textColor="@color/foreground"
+        android:background="@color/ligthPrimaryColor"
         android:layout_weight="1"/>
 
     <Button
@@ -50,8 +50,8 @@
         android:layout_height="wrap_content"
         android:text="Ásia"
         android:textSize="20dp"
-        android:background="@color/background"
         android:textColor="@color/foreground"
+        android:background="@color/ligthPrimaryColor"
         android:layout_weight="1"/>
 
     <Button
@@ -60,8 +60,8 @@
         android:layout_height="wrap_content"
         android:text="Europa"
         android:textSize="20dp"
-        android:background="@color/background"
         android:textColor="@color/foreground"
+        android:background="@color/ligthPrimaryColor"
         android:layout_weight="1"/>
 
     <Button
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:text="Oceania"
         android:textSize="20dp"
-        android:background="@color/background"
+        android:background="@color/ligthPrimaryColor"
         android:textColor="@color/foreground"
         android:layout_weight="1"/>
 </LinearLayout>
