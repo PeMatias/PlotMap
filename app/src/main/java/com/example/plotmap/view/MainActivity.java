@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.plotmap.R;
 import com.example.plotmap.adapter.Adapter;
 import com.example.plotmap.dao.Repositorio;
+import com.example.plotmap.model.Continente;
 import com.example.plotmap.model.Pais;
 import com.example.plotmap.util.HttpRetrofit2;
 
@@ -30,7 +31,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class MainActivity extends Continente implements SwipeRefreshLayout.OnRefreshListener {
 
     private Adapter adapter;
     private List<Pais> paisList;
@@ -68,7 +69,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 hasPermission();
 
                 Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                intent.putExtra("pais",paisList.get(position));
+
+                intent.putExtra("pais",paisList.get(position)); // esse funciona
+                //Teste
                 startActivity(intent);
             }
         });

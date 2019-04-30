@@ -1,26 +1,11 @@
 package com.example.plotmap.model;
 
+import android.support.v7.app.AppCompatActivity;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class Continente
-{
-    private List<Pais> continente;
-    private int quantidade;
+public class Continente extends AppCompatActivity {
+    static List<Pais> listaPaises = new ArrayList<Pais>();
 
-    public Continente(List<Pais> continente, int quantidade) {
-        this.continente = continente;
-        this.quantidade = quantidade;
-    }
-
-    public Continente(List<Pais> continente) {
-        this.continente = continente;
-    }
-
-    public List<Pais> getContinente() {
-        return continente;
-    }
-
-    public void setContinente(List<Pais> continente) {
-        this.continente = continente;
-    }
 }
