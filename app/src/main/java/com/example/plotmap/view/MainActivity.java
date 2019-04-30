@@ -23,6 +23,7 @@ import com.example.plotmap.model.Continente;
 import com.example.plotmap.model.Pais;
 import com.example.plotmap.util.HttpRetrofit2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -70,8 +71,11 @@ public class MainActivity extends Continente implements SwipeRefreshLayout.OnRef
 
                 Intent intent = new Intent(MainActivity.this, MapsActivity.class);
 
-                intent.putExtra("pais",paisList.get(position)); // esse funciona
+                //intent.putExtra("pais",paisList.get(position)); // esse funciona
                 //Teste
+                intent.putExtra("LIST", (Serializable) paisList);
+
+
                 startActivity(intent);
             }
         });
