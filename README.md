@@ -1,5 +1,16 @@
 # PlotMap &mdash; Android Application
-Aplicativo para Android que consome a seguinte API: https://restcountries.eu/rest/v1/all​ . 
+Aplicativo desenvolvido para a disciplina de Sistemas Distribuídos ofertada pelo Instituto de Computação do Amazonas na Universidade Federal do Amazonas (UFAM). 
+
+## Objetivo da atividade
+O objetivo dessa atividade é fazer uma aplicação Android que consuma a seguinte API: https://restcountries.eu/rest/v1/all​  e salvar os dados obtidos em uma banco de dados. A Api fornece uma lista com vários várias informações dos países do mundo, incluindo dados de localização como a latitude e longitude. 
+
+## Funcionalidades do PlotMap
+
+1. Listar os nomes dos países e suas respectivas capitais. Além de fornecer o continente que está inserido.
+
+2. Plotar em um mapa a geolocalização de cada país. 
+
+3. Através de um menu de opções, o usuário pode escolher plotar todos os países de um determinado continente.
 
 
 ## Instalação
