@@ -34,7 +34,7 @@ public class Pais implements Serializable
         this.latlong = latlong;
     }
 
-    public String getPais() {
+    public String getNome() {
         return nome;
     }
 

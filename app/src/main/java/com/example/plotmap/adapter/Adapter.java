@@ -28,7 +28,7 @@ public class Adapter extends ArrayAdapter<Pais>
         TextView txtContinente = (TextView) convertView.findViewById(R.id.continente);
         TextView txtSubcontinente = (TextView) convertView.findViewById(R.id.subcontinente);
 
-        txtNome.setText(pais.getPais());
+        txtNome.setText(pais.getNome());
         txtCapital.setText(pais.getCapital());
         txtContinente.setText(pais.getContinente());
         txtSubcontinente.setText(pais.getSubcontinente());
