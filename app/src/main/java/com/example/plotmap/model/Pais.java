@@ -3,6 +3,7 @@ package com.example.plotmap.model;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,6 +13,8 @@ public class Pais implements Serializable
 {
     @SerializedName("name")
     private String nome;
+
+    public long id;
 
     @SerializedName("capital")
     private String capital;
@@ -23,9 +26,9 @@ public class Pais implements Serializable
     private String subcontinente;
 
     @SerializedName("latlng")
-    private List<Double> latlong = null;
+    private List<Double> latlong = new ArrayList<Double>(2);
 
-    public Pais(String pais, String capital, String continente, String subcontinente, List<Double> latlong)
+    public Pais(String pais, String capital, String continente, String subcontinente, List<Double>latlong)
     {
         this.nome = pais;
         this.capital = capital;

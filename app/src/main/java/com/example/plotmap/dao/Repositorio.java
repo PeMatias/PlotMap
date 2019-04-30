@@ -22,7 +22,7 @@ public class Repositorio {
     public long inserir(Pais pais){
         db = helper.getReadableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put(SQLHelper.COLUNA_NOME, pais.getPais());
+        cv.put(SQLHelper.COLUNA_NOME, pais.getNome());
         cv.put(SQLHelper.COLUNA_CAPITAL, pais.getCapital());
         try {
             cv.put(SQLHelper.COLUNA_LATITUDE, pais.getLatlong().get(0));
