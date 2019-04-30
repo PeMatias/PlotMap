@@ -1,8 +1,13 @@
 package com.example.plotmap.view;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -57,7 +62,14 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplication(), paisList.get(position).toString(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplication(), paisList.get(position).toString(), Toast.LENGTH_LONG).show();
+
+                //Adicionando a troca de activity com o mapa
+                hasPermission();
+
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                intent.putExtra("pais",paisList.get(position));
+                startActivity(intent);
             }
         });
     }
@@ -128,6 +140,26 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
             getDataSqlite();
         }
 
+    }
+
+    // API DO GOOGLE MAPS
+    void hasPermission(){
+        //pede permissao de localizacao
+        if (ContextCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // ja pediu permissao?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+            } else {
+
+                // solicita permissao de localizacao
+                ActivityCompat.requestPermissions(MainActivity.this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 0);
+            }
+        }
     }
 
 
