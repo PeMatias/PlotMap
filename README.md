@@ -18,24 +18,6 @@ Clone este repositório e importe no **Android Studio**
 ```bash
 git clone git://github.com/PeMatias/PlotMap.git
 ```
-
-## Configuração
-### Keystores:
-Create `app/keystore.gradle` with the following info:
-```gradle
-ext.key_alias='...'
-ext.key_password='...'
-ext.store_password='...'
-```
-And place both keystores under `app/keystores/` directory:
-- `playstore.keystore`
-- `stage.keystore`
-
-
-## Build variants
-Use the Android Studio *Build Variants* button to choose between **production** and **staging** flavors combined with debug and release build types
-
-
 ## Gerando assinaturas para o APK
 From Android Studio:
 1. ***Build*** menu
